@@ -1,0 +1,923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8721A1E11E8DCB2C0066F602 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8721A1E01E8DCB2C0066F602 /* LoginViewController.swift */; };
+		8721A1E31E8DCE1D0066F602 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8721A1E21E8DCE1D0066F602 /* GoogleService-Info.plist */; };
+		872345471ECB57EE00D7FEC2 /* NadaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 872345461ECB57EE00D7FEC2 /* NadaCell.xib */; };
+		872BC4F2203A77FB00C08807 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872BC4F1203A77FB00C08807 /* Profile.swift */; };
+		872BC4F4203AA35F00C08807 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872BC4F3203AA35F00C08807 /* PerfilViewController.swift */; };
+		8735B48B1EFA1D2F00FF3B03 /* DetalhesVendasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8735B48A1EFA1D2F00FF3B03 /* DetalhesVendasViewController.swift */; };
+		875A491D1E9EE2760061D9DF /* VendasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875A491C1E9EE2760061D9DF /* VendasTableViewCell.swift */; };
+		875A491F1E9EE2890061D9DF /* Vendas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875A491E1E9EE2890061D9DF /* Vendas.swift */; };
+		8768499A1E8DD5EB00F09019 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876849991E8DD5EB00F09019 /* FBSDKLoginKit.framework */; };
+		877641E81ECEA9B100F0B8BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877641E71ECEA9B100F0B8BF /* Main.storyboard */; };
+		878018D61E9D92F2000306C0 /* TapToCloseKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878018D51E9D92F2000306C0 /* TapToCloseKeyboard.swift */; };
+		878018D81E9D9875000306C0 /* ComidinhasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878018D71E9D9875000306C0 /* ComidinhasViewController.swift */; };
+		878018DC1E9D98D7000306C0 /* VendasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878018DB1E9D98D7000306C0 /* VendasViewController.swift */; };
+		878666C91F69F2390076006D /* PassTouchesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878666C81F69F2390076006D /* PassTouchesScrollView.swift */; };
+		87A97F461E9DD35000856A02 /* ComidinhasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A97F451E9DD35000856A02 /* ComidinhasTableViewCell.swift */; };
+		87A97F491E9DD55F00856A02 /* Comidinhas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A97F481E9DD55F00856A02 /* Comidinhas.swift */; };
+		87AB33C21E9EF942003A2260 /* CellProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87AB33C11E9EF942003A2260 /* CellProperties.plist */; };
+		87AB33CA1E9F2CFA003A2260 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB33C91E9F2CFA003A2260 /* CustomCell.swift */; };
+		87AB33D11E9F315E003A2260 /* NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87AB33D01E9F315E003A2260 /* NormalCell.xib */; };
+		87AB33D51E9F3880003A2260 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87AB33D41E9F3880003A2260 /* MenuCell.xib */; };
+		87B6D89C1EDD07D1004689BD /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B6D89B1EDD07D1004689BD /* Filter.swift */; };
+		87B6D89F1EDD086E004689BD /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B6D89E1EDD086E004689BD /* FilterTableViewCell.swift */; };
+		87C9D6C51DD0D9C000F2EDCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9D6C41DD0D9C000F2EDCE /* AppDelegate.swift */; };
+		87C9D6CF1DD0D9C000F2EDCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C9D6CD1DD0D9C000F2EDCE /* LaunchScreen.storyboard */; };
+		87C9D6DA1DD0D9C100F2EDCE /* ComidinhasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9D6D91DD0D9C100F2EDCE /* ComidinhasTests.swift */; };
+		87C9D6E51DD0D9C100F2EDCE /* ComidinhasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9D6E41DD0D9C100F2EDCE /* ComidinhasUITests.swift */; };
+		87CA7ED71E9D4997007805D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CA7ED61E9D4997007805D2 /* Assets.xcassets */; };
+		87D9A6411ECEA84F00EBF9C7 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D9A6401ECEA84F00EBF9C7 /* PieChart.swift */; };
+		87FA736B1EB2F4B1008FDC74 /* DetalhesComidinhasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FA736A1EB2F4B1008FDC74 /* DetalhesComidinhasViewController.swift */; };
+		F99D3A2064709D65D368F5F8 /* Pods_Comidinhas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C630183DCE6035420F6403D6 /* Pods_Comidinhas.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87C9D6D61DD0D9C100F2EDCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87C9D6B91DD0D9C000F2EDCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87C9D6C01DD0D9C000F2EDCE;
+			remoteInfo = Comidinhas;
+		};
+		87C9D6E11DD0D9C100F2EDCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87C9D6B91DD0D9C000F2EDCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87C9D6C01DD0D9C000F2EDCE;
+			remoteInfo = Comidinhas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		513DEE6FFC03C3EE228A20F3 /* Pods-Comidinhas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comidinhas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Comidinhas/Pods-Comidinhas.release.xcconfig"; sourceTree = "<group>"; };
+		8721A1E01E8DCB2C0066F602 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8721A1E21E8DCE1D0066F602 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		872345461ECB57EE00D7FEC2 /* NadaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NadaCell.xib; sourceTree = "<group>"; };
+		872BC4F1203A77FB00C08807 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		872BC4F3203AA35F00C08807 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		8735B48A1EFA1D2F00FF3B03 /* DetalhesVendasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesVendasViewController.swift; sourceTree = "<group>"; };
+		875A491C1E9EE2760061D9DF /* VendasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendasTableViewCell.swift; sourceTree = "<group>"; };
+		875A491E1E9EE2890061D9DF /* Vendas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vendas.swift; sourceTree = "<group>"; };
+		876849991E8DD5EB00F09019 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		877641E71ECEA9B100F0B8BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		878018D51E9D92F2000306C0 /* TapToCloseKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapToCloseKeyboard.swift; sourceTree = "<group>"; };
+		878018D71E9D9875000306C0 /* ComidinhasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComidinhasViewController.swift; sourceTree = "<group>"; };
+		878018DB1E9D98D7000306C0 /* VendasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendasViewController.swift; sourceTree = "<group>"; };
+		878666C81F69F2390076006D /* PassTouchesScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassTouchesScrollView.swift; sourceTree = "<group>"; };
+		87A97F451E9DD35000856A02 /* ComidinhasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComidinhasTableViewCell.swift; sourceTree = "<group>"; };
+		87A97F481E9DD55F00856A02 /* Comidinhas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comidinhas.swift; sourceTree = "<group>"; };
+		87AB33C11E9EF942003A2260 /* CellProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CellProperties.plist; sourceTree = "<group>"; };
+		87AB33C91E9F2CFA003A2260 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		87AB33D01E9F315E003A2260 /* NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCell.xib; sourceTree = "<group>"; };
+		87AB33D41E9F3880003A2260 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		87B6D89B1EDD07D1004689BD /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		87B6D89E1EDD086E004689BD /* FilterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		87C9D6C11DD0D9C000F2EDCE /* Comidinhas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comidinhas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C9D6C41DD0D9C000F2EDCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87C9D6CE1DD0D9C000F2EDCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87C9D6D01DD0D9C000F2EDCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87C9D6D51DD0D9C100F2EDCE /* ComidinhasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComidinhasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C9D6D91DD0D9C100F2EDCE /* ComidinhasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidinhasTests.swift; sourceTree = "<group>"; };
+		87C9D6DB1DD0D9C100F2EDCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87C9D6E01DD0D9C100F2EDCE /* ComidinhasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComidinhasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C9D6E41DD0D9C100F2EDCE /* ComidinhasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidinhasUITests.swift; sourceTree = "<group>"; };
+		87C9D6E61DD0D9C100F2EDCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87CA7ED61E9D4997007805D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87D9A6401ECEA84F00EBF9C7 /* PieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		87FA736A1EB2F4B1008FDC74 /* DetalhesComidinhasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesComidinhasViewController.swift; sourceTree = "<group>"; };
+		BDA288B76A11B7C7A196C7AB /* Pods-Comidinhas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comidinhas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Comidinhas/Pods-Comidinhas.debug.xcconfig"; sourceTree = "<group>"; };
+		C630183DCE6035420F6403D6 /* Pods_Comidinhas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comidinhas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87C9D6BE1DD0D9C000F2EDCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8768499A1E8DD5EB00F09019 /* FBSDKLoginKit.framework in Frameworks */,
+				F99D3A2064709D65D368F5F8 /* Pods_Comidinhas.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C9D6D21DD0D9C100F2EDCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C9D6DD1DD0D9C100F2EDCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8721A1DF1E8DCACA0066F602 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8721A1E01E8DCB2C0066F602 /* LoginViewController.swift */,
+				878018D71E9D9875000306C0 /* ComidinhasViewController.swift */,
+				872BC4F3203AA35F00C08807 /* PerfilViewController.swift */,
+				878018DB1E9D98D7000306C0 /* VendasViewController.swift */,
+				87FA736A1EB2F4B1008FDC74 /* DetalhesComidinhasViewController.swift */,
+				8735B48A1EFA1D2F00FF3B03 /* DetalhesVendasViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		875A491B1E9EE2600061D9DF /* Vendas */ = {
+			isa = PBXGroup;
+			children = (
+				875A491C1E9EE2760061D9DF /* VendasTableViewCell.swift */,
+			);
+			name = Vendas;
+			sourceTree = "<group>";
+		};
+		878018D11E9D9067000306C0 /* Constantes */ = {
+			isa = PBXGroup;
+			children = (
+				878018D51E9D92F2000306C0 /* TapToCloseKeyboard.swift */,
+			);
+			name = Constantes;
+			sourceTree = "<group>";
+		};
+		87A97F431E9DCFB300856A02 /* Celulas */ = {
+			isa = PBXGroup;
+			children = (
+				875A491B1E9EE2600061D9DF /* Vendas */,
+				87A97F441E9DCFCF00856A02 /* Comidinhas */,
+			);
+			name = Celulas;
+			sourceTree = "<group>";
+		};
+		87A97F441E9DCFCF00856A02 /* Comidinhas */ = {
+			isa = PBXGroup;
+			children = (
+				87B6D89D1EDD0849004689BD /* Auxiliar */,
+				87A97F451E9DD35000856A02 /* ComidinhasTableViewCell.swift */,
+			);
+			name = Comidinhas;
+			sourceTree = "<group>";
+		};
+		87A97F471E9DD54D00856A02 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				87B6D89A1EDD07B0004689BD /* Auxiliares */,
+				87D9A63F1ECEA83000EBF9C7 /* View */,
+				87A97F481E9DD55F00856A02 /* Comidinhas.swift */,
+				875A491E1E9EE2890061D9DF /* Vendas.swift */,
+				872BC4F1203A77FB00C08807 /* Profile.swift */,
+			);
+			name = Modelo;
+			sourceTree = "<group>";
+		};
+		87AB33CF1E9F30BF003A2260 /* Perfil Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				87AB33D01E9F315E003A2260 /* NormalCell.xib */,
+				87AB33D41E9F3880003A2260 /* MenuCell.xib */,
+				872345461ECB57EE00D7FEC2 /* NadaCell.xib */,
+			);
+			name = "Perfil Custom Cell";
+			sourceTree = "<group>";
+		};
+		87B6D89A1EDD07B0004689BD /* Auxiliares */ = {
+			isa = PBXGroup;
+			children = (
+				87B6D89B1EDD07D1004689BD /* Filter.swift */,
+			);
+			name = Auxiliares;
+			sourceTree = "<group>";
+		};
+		87B6D89D1EDD0849004689BD /* Auxiliar */ = {
+			isa = PBXGroup;
+			children = (
+				87B6D89E1EDD086E004689BD /* FilterTableViewCell.swift */,
+			);
+			name = Auxiliar;
+			sourceTree = "<group>";
+		};
+		87C9D6B81DD0D9C000F2EDCE = {
+			isa = PBXGroup;
+			children = (
+				87A97F471E9DD54D00856A02 /* Modelo */,
+				87A97F431E9DCFB300856A02 /* Celulas */,
+				878018D11E9D9067000306C0 /* Constantes */,
+				8721A1DF1E8DCACA0066F602 /* View Controllers */,
+				87C9D6C31DD0D9C000F2EDCE /* Comidinhas */,
+				87C9D6D81DD0D9C100F2EDCE /* ComidinhasTests */,
+				87C9D6E31DD0D9C100F2EDCE /* ComidinhasUITests */,
+				87C9D6C21DD0D9C000F2EDCE /* Products */,
+				EA8177197F4E41EFBE37598C /* Frameworks */,
+				F46B345D81E2CF6D7E18A22D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		87C9D6C21DD0D9C000F2EDCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87C9D6C11DD0D9C000F2EDCE /* Comidinhas.app */,
+				87C9D6D51DD0D9C100F2EDCE /* ComidinhasTests.xctest */,
+				87C9D6E01DD0D9C100F2EDCE /* ComidinhasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87C9D6C31DD0D9C000F2EDCE /* Comidinhas */ = {
+			isa = PBXGroup;
+			children = (
+				87AB33CF1E9F30BF003A2260 /* Perfil Custom Cell */,
+				87CA7ED61E9D4997007805D2 /* Assets.xcassets */,
+				8721A1E21E8DCE1D0066F602 /* GoogleService-Info.plist */,
+				87C9D6C41DD0D9C000F2EDCE /* AppDelegate.swift */,
+				87AB33C91E9F2CFA003A2260 /* CustomCell.swift */,
+				877641E71ECEA9B100F0B8BF /* Main.storyboard */,
+				87C9D6CD1DD0D9C000F2EDCE /* LaunchScreen.storyboard */,
+				87C9D6D01DD0D9C000F2EDCE /* Info.plist */,
+				87AB33C11E9EF942003A2260 /* CellProperties.plist */,
+			);
+			path = Comidinhas;
+			sourceTree = "<group>";
+		};
+		87C9D6D81DD0D9C100F2EDCE /* ComidinhasTests */ = {
+			isa = PBXGroup;
+			children = (
+				87C9D6D91DD0D9C100F2EDCE /* ComidinhasTests.swift */,
+				87C9D6DB1DD0D9C100F2EDCE /* Info.plist */,
+			);
+			path = ComidinhasTests;
+			sourceTree = "<group>";
+		};
+		87C9D6E31DD0D9C100F2EDCE /* ComidinhasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87C9D6E41DD0D9C100F2EDCE /* ComidinhasUITests.swift */,
+				87C9D6E61DD0D9C100F2EDCE /* Info.plist */,
+			);
+			path = ComidinhasUITests;
+			sourceTree = "<group>";
+		};
+		87D9A63F1ECEA83000EBF9C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87D9A6401ECEA84F00EBF9C7 /* PieChart.swift */,
+				878666C81F69F2390076006D /* PassTouchesScrollView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EA8177197F4E41EFBE37598C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				876849991E8DD5EB00F09019 /* FBSDKLoginKit.framework */,
+				C630183DCE6035420F6403D6 /* Pods_Comidinhas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F46B345D81E2CF6D7E18A22D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDA288B76A11B7C7A196C7AB /* Pods-Comidinhas.debug.xcconfig */,
+				513DEE6FFC03C3EE228A20F3 /* Pods-Comidinhas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87C9D6C01DD0D9C000F2EDCE /* Comidinhas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87C9D6E91DD0D9C100F2EDCE /* Build configuration list for PBXNativeTarget "Comidinhas" */;
+			buildPhases = (
+				29C3945A22F9D489F1F534FE /* [CP] Check Pods Manifest.lock */,
+				87C9D6BD1DD0D9C000F2EDCE /* Sources */,
+				87C9D6BE1DD0D9C000F2EDCE /* Frameworks */,
+				87C9D6BF1DD0D9C000F2EDCE /* Resources */,
+				2DE7BE8A3333E816AA287E56 /* [CP] Embed Pods Frameworks */,
+				5A00490FFE362C45B5CA5ED4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Comidinhas;
+			productName = Comidinhas;
+			productReference = 87C9D6C11DD0D9C000F2EDCE /* Comidinhas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87C9D6D41DD0D9C100F2EDCE /* ComidinhasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87C9D6EC1DD0D9C100F2EDCE /* Build configuration list for PBXNativeTarget "ComidinhasTests" */;
+			buildPhases = (
+				87C9D6D11DD0D9C100F2EDCE /* Sources */,
+				87C9D6D21DD0D9C100F2EDCE /* Frameworks */,
+				87C9D6D31DD0D9C100F2EDCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87C9D6D71DD0D9C100F2EDCE /* PBXTargetDependency */,
+			);
+			name = ComidinhasTests;
+			productName = ComidinhasTests;
+			productReference = 87C9D6D51DD0D9C100F2EDCE /* ComidinhasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87C9D6DF1DD0D9C100F2EDCE /* ComidinhasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87C9D6EF1DD0D9C100F2EDCE /* Build configuration list for PBXNativeTarget "ComidinhasUITests" */;
+			buildPhases = (
+				87C9D6DC1DD0D9C100F2EDCE /* Sources */,
+				87C9D6DD1DD0D9C100F2EDCE /* Frameworks */,
+				87C9D6DE1DD0D9C100F2EDCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87C9D6E21DD0D9C100F2EDCE /* PBXTargetDependency */,
+			);
+			name = ComidinhasUITests;
+			productName = ComidinhasUITests;
+			productReference = 87C9D6E01DD0D9C100F2EDCE /* ComidinhasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87C9D6B91DD0D9C000F2EDCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Nicolas Melo";
+				TargetAttributes = {
+					87C9D6C01DD0D9C000F2EDCE = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7B9TRBK97R;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					87C9D6D41DD0D9C100F2EDCE = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7B9TRBK97R;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 87C9D6C01DD0D9C000F2EDCE;
+					};
+					87C9D6DF1DD0D9C100F2EDCE = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7B9TRBK97R;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 87C9D6C01DD0D9C000F2EDCE;
+					};
+				};
+			};
+			buildConfigurationList = 87C9D6BC1DD0D9C000F2EDCE /* Build configuration list for PBXProject "Comidinhas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87C9D6B81DD0D9C000F2EDCE;
+			productRefGroup = 87C9D6C21DD0D9C000F2EDCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87C9D6C01DD0D9C000F2EDCE /* Comidinhas */,
+				87C9D6D41DD0D9C100F2EDCE /* ComidinhasTests */,
+				87C9D6DF1DD0D9C100F2EDCE /* ComidinhasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87C9D6BF1DD0D9C000F2EDCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AB33D11E9F315E003A2260 /* NormalCell.xib in Resources */,
+				872345471ECB57EE00D7FEC2 /* NadaCell.xib in Resources */,
+				87C9D6CF1DD0D9C000F2EDCE /* LaunchScreen.storyboard in Resources */,
+				877641E81ECEA9B100F0B8BF /* Main.storyboard in Resources */,
+				8721A1E31E8DCE1D0066F602 /* GoogleService-Info.plist in Resources */,
+				87AB33D51E9F3880003A2260 /* MenuCell.xib in Resources */,
+				87CA7ED71E9D4997007805D2 /* Assets.xcassets in Resources */,
+				87AB33C21E9EF942003A2260 /* CellProperties.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C9D6D31DD0D9C100F2EDCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C9D6DE1DD0D9C100F2EDCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29C3945A22F9D489F1F534FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Comidinhas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DE7BE8A3333E816AA287E56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Comidinhas/Pods-Comidinhas-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YangMingShan/YangMingShan.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YangMingShan.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Comidinhas/Pods-Comidinhas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A00490FFE362C45B5CA5ED4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Comidinhas/Pods-Comidinhas-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Comidinhas/Pods-Comidinhas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87C9D6BD1DD0D9C000F2EDCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D9A6411ECEA84F00EBF9C7 /* PieChart.swift in Sources */,
+				875A491D1E9EE2760061D9DF /* VendasTableViewCell.swift in Sources */,
+				8735B48B1EFA1D2F00FF3B03 /* DetalhesVendasViewController.swift in Sources */,
+				878666C91F69F2390076006D /* PassTouchesScrollView.swift in Sources */,
+				8721A1E11E8DCB2C0066F602 /* LoginViewController.swift in Sources */,
+				87A97F461E9DD35000856A02 /* ComidinhasTableViewCell.swift in Sources */,
+				872BC4F2203A77FB00C08807 /* Profile.swift in Sources */,
+				875A491F1E9EE2890061D9DF /* Vendas.swift in Sources */,
+				87FA736B1EB2F4B1008FDC74 /* DetalhesComidinhasViewController.swift in Sources */,
+				87B6D89C1EDD07D1004689BD /* Filter.swift in Sources */,
+				878018D61E9D92F2000306C0 /* TapToCloseKeyboard.swift in Sources */,
+				87B6D89F1EDD086E004689BD /* FilterTableViewCell.swift in Sources */,
+				872BC4F4203AA35F00C08807 /* PerfilViewController.swift in Sources */,
+				878018DC1E9D98D7000306C0 /* VendasViewController.swift in Sources */,
+				87A97F491E9DD55F00856A02 /* Comidinhas.swift in Sources */,
+				878018D81E9D9875000306C0 /* ComidinhasViewController.swift in Sources */,
+				87AB33CA1E9F2CFA003A2260 /* CustomCell.swift in Sources */,
+				87C9D6C51DD0D9C000F2EDCE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C9D6D11DD0D9C100F2EDCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C9D6DA1DD0D9C100F2EDCE /* ComidinhasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C9D6DC1DD0D9C100F2EDCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C9D6E51DD0D9C100F2EDCE /* ComidinhasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87C9D6D71DD0D9C100F2EDCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87C9D6C01DD0D9C000F2EDCE /* Comidinhas */;
+			targetProxy = 87C9D6D61DD0D9C100F2EDCE /* PBXContainerItemProxy */;
+		};
+		87C9D6E21DD0D9C100F2EDCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87C9D6C01DD0D9C000F2EDCE /* Comidinhas */;
+			targetProxy = 87C9D6E11DD0D9C100F2EDCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87C9D6CD1DD0D9C000F2EDCE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87C9D6CE1DD0D9C000F2EDCE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87C9D6E71DD0D9C100F2EDCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87C9D6E81DD0D9C100F2EDCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87C9D6EA1DD0D9C100F2EDCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDA288B76A11B7C7A196C7AB /* Pods-Comidinhas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7B9TRBK97R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Bolts\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKCoreKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMOAuth2\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"${PODS_ROOT}/Fabric/iOS\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseStorage/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseDatabaseUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseFacebookAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseGoogleAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseStorageUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseTwitterAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+					"\"${PODS_ROOT}/TwitterCore/iOS\"",
+					"\"${PODS_ROOT}/TwitterKit/iOS\"",
+					"~Documents/FacebookSDK",
+				);
+				INFOPLIST_FILE = Comidinhas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.nicolasmelo.Comidinhas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		87C9D6EB1DD0D9C100F2EDCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 513DEE6FFC03C3EE228A20F3 /* Pods-Comidinhas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7B9TRBK97R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Bolts\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKCoreKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMOAuth2\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"${PODS_ROOT}/Fabric/iOS\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseStorage/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseDatabaseUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseFacebookAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseGoogleAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseStorageUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseTwitterAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+					"\"${PODS_ROOT}/TwitterCore/iOS\"",
+					"\"${PODS_ROOT}/TwitterKit/iOS\"",
+					"~Documents/FacebookSDK",
+				);
+				INFOPLIST_FILE = Comidinhas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.nicolasmelo.Comidinhas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		87C9D6ED1DD0D9C100F2EDCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7B9TRBK97R;
+				INFOPLIST_FILE = ComidinhasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicolasmelo.ComidinhasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Comidinhas.app/Comidinhas";
+			};
+			name = Debug;
+		};
+		87C9D6EE1DD0D9C100F2EDCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7B9TRBK97R;
+				INFOPLIST_FILE = ComidinhasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicolasmelo.ComidinhasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Comidinhas.app/Comidinhas";
+			};
+			name = Release;
+		};
+		87C9D6F01DD0D9C100F2EDCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7B9TRBK97R;
+				INFOPLIST_FILE = ComidinhasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicolasmelo.ComidinhasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Comidinhas;
+			};
+			name = Debug;
+		};
+		87C9D6F11DD0D9C100F2EDCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7B9TRBK97R;
+				INFOPLIST_FILE = ComidinhasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicolasmelo.ComidinhasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Comidinhas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87C9D6BC1DD0D9C000F2EDCE /* Build configuration list for PBXProject "Comidinhas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87C9D6E71DD0D9C100F2EDCE /* Debug */,
+				87C9D6E81DD0D9C100F2EDCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87C9D6E91DD0D9C100F2EDCE /* Build configuration list for PBXNativeTarget "Comidinhas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87C9D6EA1DD0D9C100F2EDCE /* Debug */,
+				87C9D6EB1DD0D9C100F2EDCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87C9D6EC1DD0D9C100F2EDCE /* Build configuration list for PBXNativeTarget "ComidinhasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87C9D6ED1DD0D9C100F2EDCE /* Debug */,
+				87C9D6EE1DD0D9C100F2EDCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87C9D6EF1DD0D9C100F2EDCE /* Build configuration list for PBXNativeTarget "ComidinhasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87C9D6F01DD0D9C100F2EDCE /* Debug */,
+				87C9D6F11DD0D9C100F2EDCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87C9D6B91DD0D9C000F2EDCE /* Project object */;
+}
