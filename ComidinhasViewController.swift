@@ -8,7 +8,7 @@
 import os.log
 import UIKit
 import Firebase
-
+import RealmSwift
 class ComidinhasViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     //MARK: Variaveis Comidinhas
@@ -90,12 +90,10 @@ class ComidinhasViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         if tableView == self.comidinhasTableView{
             let favorite = UITableViewRowAction(style: .normal, title: "\u{2665}") { action, index in
-                if let path = Bundle.main.path(forResource: "CellProperties", ofType: "plist") {
-                    self.cellProperties = NSMutableArray(contentsOfFile: path)
-                    for cells in self.cellProperties{
-                        print((cells as AnyObject))
-                    }
-                }
+                let realm = try! Realm()
+                let maxid = realm.objects(Profile.self).sorted(byKeyPath: "id").last?.id
+                let comidinhas = self.comidinhas[indexPath.row].id
+                
             }
             favorite.backgroundColor = #colorLiteral(red: 0.615627408, green: 0.6043154597, blue: 0.5780405402, alpha: 1)
             return [favorite]
@@ -155,7 +153,7 @@ class ComidinhasViewController: UIViewController, UITableViewDataSource, UITable
             cell?.manha.addSubview(pieChart!)
             cell?.nomeVendedor.text = comidinha.nomeVendedorComdidinhas
             cell?.nomeProduto.text = comidinha.nomeProdutoComdidinhas
-            cell?.imagemProduto.image = comidinha.imagemProdutoComidinhas
+            cell?.imagemProduto.image = UIImage(named: "Logo")!
             cell?.precoLabel.text = comidinha.precoLabelComdidinhas
         
             if (comidinha.veganoComdidinhas == "true"){
@@ -390,44 +388,67 @@ class ComidinhasViewController: UIViewController, UITableViewDataSource, UITable
     private func loadInfosComidinhas(){
         
         
-        let comidinhas1 = Comidinhas(isManha: "true", isTarde: "true", isNoite: "false",
-                                     nomeVendedorComdidinhas: "Nicolas Leal",
-                                     nomeProdutoComdidinhas: "Strogonoff",
-                                     imagemProdutoComidinhas: UIImage(named: "Logo")!,
-                                     precoLabelComdidinhas: "R$5,00",
-                                     veganoComdidinhas: "false",
-                                     salgadoOuDoceComdidinhas: "salgado")
-        let comidinhas2 = Comidinhas(isManha: "false", isTarde: "true", isNoite: "true",
-                                     nomeVendedorComdidinhas: "Viviane Gennari",
-                                     nomeProdutoComdidinhas: "Cones",
-                                     imagemProdutoComidinhas: UIImage(named: "Logo")!,
-                                     precoLabelComdidinhas: "R$4,00",
-                                     veganoComdidinhas: "true",
-                                     salgadoOuDoceComdidinhas: "salgado")
-        let comidinhas3 = Comidinhas(isManha: "true", isTarde: "false", isNoite: "true",
-                                     nomeVendedorComdidinhas: "Juan Nogueira",
-                                     nomeProdutoComdidinhas: "Trakinas",
-                                     imagemProdutoComidinhas: UIImage(named: "Logo")!,
-                                     precoLabelComdidinhas: "R$3,00",
-                                     veganoComdidinhas: "false",
-                                     salgadoOuDoceComdidinhas: "salgado")
-        let comidinhas4 = Comidinhas(isManha: "true", isTarde: "true", isNoite: "true",
-                                     nomeVendedorComdidinhas: "Hortencia",
-                                     nomeProdutoComdidinhas: "Batata Frita",
-                                     imagemProdutoComidinhas: UIImage(named: "Logo")!,
-                                     precoLabelComdidinhas: "R$2,00",
-                                     veganoComdidinhas: "false",
-                                     salgadoOuDoceComdidinhas: "salgado")
-        let comidinhas5 = Comidinhas(isManha: "true", isTarde: "false", isNoite: "true",
-                                     nomeVendedorComdidinhas: "Vinicius Chaim",
-                                     nomeProdutoComdidinhas: "Café",
-                                     imagemProdutoComidinhas: UIImage(named: "Logo")!,
-                                     precoLabelComdidinhas: "R$4,50",
-                                     veganoComdidinhas: "true",
-                                     salgadoOuDoceComdidinhas: "salgado")
+        let comidinhas1 = Comidinhas()
+        comidinhas1.isManha = "true"
+        comidinhas1.isTarde = "true"
+        comidinhas1.isNoite = "false"
+        comidinhas1.nomeVendedorComdidinhas = "Nicolas Leal"
+        comidinhas1.nomeProdutoComdidinhas = "Strogonoff"
+        comidinhas1.precoLabelComdidinhas = "R$5,00"
+        comidinhas1.veganoComdidinhas = "false"
+        comidinhas1.salgadoOuDoceComdidinhas = "salgado"
+        comidinhas1.id = 1
+        let comidinhas2 = Comidinhas()
+        comidinhas2.isManha = "false"
+        comidinhas2.isTarde = "true"
+        comidinhas2.isNoite = "true"
+        comidinhas2.nomeVendedorComdidinhas = "Viviane Gennari"
+        comidinhas2.nomeProdutoComdidinhas = "Cones"
+        comidinhas2.precoLabelComdidinhas = "R$4,00"
+        comidinhas2.veganoComdidinhas = "true"
+        comidinhas2.salgadoOuDoceComdidinhas = "salgado"
+        comidinhas2.id = 2
+        let comidinhas3 = Comidinhas()
+        comidinhas3.isManha = "true"
+        comidinhas3.isTarde = "false"
+        comidinhas3.isNoite = "true"
+        comidinhas3.nomeVendedorComdidinhas = "Juan Nogueira"
+        comidinhas3.nomeProdutoComdidinhas = "Trakinas"
+        comidinhas3.precoLabelComdidinhas = "R$3,00"
+        comidinhas3.veganoComdidinhas = "false"
+        comidinhas3.salgadoOuDoceComdidinhas = "salgado"
+        comidinhas3.id = 3
         
+        let comidinhas4 = Comidinhas()
+        comidinhas4.isManha = "true"
+        comidinhas4.isTarde = "true"
+        comidinhas4.isNoite = "true"
+        comidinhas4.nomeVendedorComdidinhas = "Hortencia"
+        comidinhas4.nomeProdutoComdidinhas = "Batata Frita"
+        comidinhas4.precoLabelComdidinhas = "R$2,00"
+        comidinhas4.veganoComdidinhas = "false"
+        comidinhas4.salgadoOuDoceComdidinhas = "salgado"
+        comidinhas4.id = 4
+        let comidinhas5 = Comidinhas()
+        comidinhas5.isManha = "true"
+        comidinhas5.isTarde = "false"
+        comidinhas5.isNoite = "true"
+        comidinhas5.nomeVendedorComdidinhas = "Vinicius Chaim"
+        comidinhas5.nomeProdutoComdidinhas = "Café"
+        comidinhas5.precoLabelComdidinhas = "R$4,50"
+        comidinhas5.veganoComdidinhas = "true"
+        comidinhas5.salgadoOuDoceComdidinhas = "salgado"
+        comidinhas5.id = 5
+        let realm = try! Realm()
         
-        comidinhas+=[comidinhas1, comidinhas2, comidinhas3, comidinhas4, comidinhas5]
+        // Persist your data easily
+        try! realm.write {
+            var itens = [Profile]()
+            comidinhas+=[comidinhas1, comidinhas2, comidinhas3, comidinhas4, comidinhas5]
+            for i in comidinhas{
+                realm.add(i, update: true)
+            }
+        }
     }
     
     

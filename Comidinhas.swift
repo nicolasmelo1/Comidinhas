@@ -8,8 +8,25 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
-class Comidinhas {
+class Comidinhas:Object{
+    @objc dynamic var isManha = ""
+    @objc dynamic var isTarde = ""
+    @objc dynamic var isNoite = ""
+    @objc dynamic var nomeVendedorComdidinhas = ""
+    @objc dynamic var nomeProdutoComdidinhas = ""
+    @objc dynamic var precoLabelComdidinhas = ""
+    @objc dynamic var veganoComdidinhas = ""
+    @objc dynamic var salgadoOuDoceComdidinhas = ""
+    @objc dynamic var id = 0
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+}
+
+/*class Comidinhas {
     //Mark: Nomes
     var isManha: String
     var isTarde: String
@@ -46,4 +63,4 @@ class Comidinhas {
         self.salgadoOuDoceComdidinhas = salgadoOuDoceComdidinhas
     }
     
-}
+}*/

@@ -59,7 +59,7 @@
 /* Begin PBXFileReference section */
 		513DEE6FFC03C3EE228A20F3 /* Pods-Comidinhas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comidinhas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Comidinhas/Pods-Comidinhas.release.xcconfig"; sourceTree = "<group>"; };
 		8721A1E01E8DCB2C0066F602 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		8721A1E21E8DCE1D0066F602 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8721A1E21E8DCE1D0066F602 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		872345461ECB57EE00D7FEC2 /* NadaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NadaCell.xib; sourceTree = "<group>"; };
 		872BC4F1203A77FB00C08807 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		872BC4F3203AA35F00C08807 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
